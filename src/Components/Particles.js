@@ -13,7 +13,7 @@ function App() {
               value: "#000000",
             },
           },
-          fpsLimit: 20,
+          fpsLimit: 100,
           interactivity: {
             events: {
               onClick: {
