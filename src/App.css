@@ -8,6 +8,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+a {
+  text-decoration: none !important;
+}
 
 #tsparticles {
   display: "block";
@@ -34,9 +37,10 @@ body {
 }
 
 .cursor-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #dc5656;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(255, 0, 0, 0.761);
+  z-index: 1;
 }
 
 .cursor-dot-outline {

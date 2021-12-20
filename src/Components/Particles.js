@@ -6,14 +6,14 @@ function App() {
     <div className="App">
       <Particles
         options={particlesOptions}
-        style={{ opacity: 0.6 }}
+        style={{ opacity: 0.8 }}
         options={{
           background: {
             color: {
               value: "#000000",
             },
           },
-          fpsLimit: 60,
+          fpsLimit: 20,
           interactivity: {
             events: {
               onClick: {
@@ -30,7 +30,7 @@ function App() {
               bubble: {
                 distance: 400,
                 duration: 2,
-                opacity: 0.7,
+                opacity: 0.9,
                 size: 40,
               },
               push: {
@@ -50,7 +50,7 @@ function App() {
               color: "#ffffff",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.3,
               width: 1,
             },
             collisions: {

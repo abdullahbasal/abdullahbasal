@@ -1,0 +1,61 @@
+.resumecomp-container {
+  margin-top: 10px;
+}
+.list-component {
+  border-left: 1px solid gray;
+  list-style: none;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+/* https://www.computerhope.com/issues/ch001705.htm */
+.list-component .__item {
+  display: block;
+  background: url("../Assets/white.png") no-repeat top left;
+  background-size: 20px;
+  background-position: top left;
+  padding: 0 0 4px 60px;
+  margin-left: 1em;
+  position: relative;
+  right: 67px;
+  margin-bottom: 10px;
+  top: 10px;
+}
+
+.card-component {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 250px;
+  font-family: Arial;
+  position: relative;
+  bottom: 20px;
+}
+
+.card-component .__year {
+  content: "";
+}
+
+.card-component .__title {
+  font-size: 1em;
+}
+
+.card-component .__text {
+  color: gray;
+  margin: 0px !important;
+}
+.li {
+  text-decoration: none;
+}
+.resume-list-item {
+  display: block;
+  border: 1px solid grey;
+  padding: 5px;
+}
+.resume-list-item:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.resume-list-item:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}

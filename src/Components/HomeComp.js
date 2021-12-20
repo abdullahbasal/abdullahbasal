@@ -19,8 +19,8 @@ export default function HomeComp() {
         "Blogger",
       ],
       startDelay: 300,
-      typeSpeed: 20,
-      backSpeed: 20,
+      typeSpeed: 60,
+      backSpeed: 60,
       backDelay: 300,
       loop: "true",
     });
@@ -47,7 +47,10 @@ export default function HomeComp() {
             <Col>
               <ul>
                 <li className="social-media-icon-li">
-                  <a href="https://www.github.com/abdullahbasal">
+                  <a
+                    href="https://www.github.com/abdullahbasal"
+                    target="_blank"
+                  >
                     <img
                       src={github}
                       style={{ height: "24px", width: "24px" }}
@@ -55,7 +58,10 @@ export default function HomeComp() {
                   </a>
                 </li>
                 <li className="social-media-icon-li">
-                  <a href="https://www.instagram.com/apocalipsetuta">
+                  <a
+                    href="https://www.instagram.com/apocalipsetuta"
+                    target="_blank"
+                  >
                     <img
                       src={instagram}
                       style={{ height: "24px", width: "24px" }}
@@ -63,7 +69,10 @@ export default function HomeComp() {
                   </a>
                 </li>
                 <li className="social-media-icon-li">
-                  <a href="https://tr.linkedin.com/in/abdullahbasal">
+                  <a
+                    href="https://tr.linkedin.com/in/abdullahbasal"
+                    target="_blank"
+                  >
                     <img
                       src={linkedin}
                       style={{

@@ -7,6 +7,9 @@ import Cursor from "./Cursor";
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Error from "./Pages/Error";
+import About from "./Pages/About";
+import Resume from "./Pages/Resume";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="*" element={<Error />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Resume" element={<Resume />} />
+            <Route path="/Contact" element={<Contact />} />
           </Routes>
         </Container>
       </Router>
