@@ -1,6 +1,7 @@
 import React from "react";
 import Particles from "./Components/Particles";
 import "./App.css";
+import "./Reset.css";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Cursor from "./Cursor";
@@ -19,7 +20,6 @@ function App() {
         <Container className="App">
           <Particles></Particles>
           <Cursor />
-
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/Abdullahbasal" element={<Home />} />

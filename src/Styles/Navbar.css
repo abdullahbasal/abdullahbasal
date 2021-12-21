@@ -32,8 +32,10 @@ li {
 
 /*fdsfsdf*/
 @media screen and (max-width: 768px) {
+  .navbar-list-col {
+    display: none;
+  }
   .navbar-li-item {
-    display: block;
     text-align: center;
     border-bottom: 0px !important;
   }
@@ -43,4 +45,17 @@ li {
   h1 {
     font-size: 40px !important;
   }
+  .navbar-dropdown-menu {
+    display: inline-block !important;
+  }
+}
+.navbar-dropdown-menu {
+  display: none;
+}
+
+#dropdown-basic {
+  background-color: black !important;
+  cursor: none;
+  border: 0px;
+  box-shadow: 0px;
 }

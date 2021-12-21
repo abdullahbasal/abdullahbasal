@@ -12,11 +12,11 @@ export default function HomeComp() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Merhaba Siteme Hoş Geldiniz",
-        "Front-end developer",
-        "Web Tasarım",
-        "Freelancer",
-        "Blogger",
+        "Merhaba Siteme Hoş Geldiniz.",
+        "Front-end developer.",
+        "Web Tasarım.",
+        "Freelancer.",
+        "Blogger.",
       ],
       startDelay: 300,
       typeSpeed: 60,

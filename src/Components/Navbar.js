@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import "../Styles/Navbar.css";
 import logo from "../Assets/code24.png";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ export default function Navbar() {
     <Container className="navbar-container">
       <Row>
         <Col md="4" className="navbar-logo-col">
-          <Link to="/">
+          <Link to="/abdullahbasal">
             <img src={logo} style={{ verticalAlign: "middle" }} />{" "}
             <h5 style={{ display: "inline-block", verticalAlign: "middle" }}>
               Abdullah Başal
@@ -17,7 +17,7 @@ export default function Navbar() {
         </Col>
         <Col md="8" className="navbar-list-col">
           <ul>
-            <Link to="/">
+            <Link to="/abdullahbasal">
               <li className="navbar-li-item">Anasayfa</li>
             </Link>
             <Link to="/About">
@@ -32,6 +32,30 @@ export default function Navbar() {
           </ul>
         </Col>
       </Row>
+
+      <Dropdown
+        style={{ textAlign: "center" }}
+        className="navbar-dropdown-menu"
+      >
+        <Dropdown.Toggle variant="dark" id="dropdown-basic">
+          Menü
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="/abdullahbasal" style={{ textAlign: "center" }}>
+            Anasayfa
+          </Dropdown.Item>
+          <Dropdown.Item href="/About" style={{ textAlign: "center" }}>
+            Hakkımda
+          </Dropdown.Item>
+          <Dropdown.Item href="/Resume" style={{ textAlign: "center" }}>
+            Öz Geçmiş
+          </Dropdown.Item>
+          <Dropdown.Item href="/Contact" style={{ textAlign: "center" }}>
+            İletişim
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
     </Container>
   );
 }

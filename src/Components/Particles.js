@@ -6,13 +6,8 @@ function App() {
     <div className="App">
       <Particles
         options={particlesOptions}
-        style={{ opacity: 0.8 }}
+        style={{ opacity: 0.6 }}
         options={{
-          background: {
-            color: {
-              value: "#000000",
-            },
-          },
           fpsLimit: 100,
           interactivity: {
             events: {
@@ -24,21 +19,21 @@ function App() {
                 enable: false,
                 mode: "repulse",
               },
-              resize: true,
+              resize: false,
             },
             modes: {
               bubble: {
-                distance: 400,
+                distance: 800,
                 duration: 2,
                 opacity: 0.9,
-                size: 40,
+                size: 80,
               },
               push: {
                 quantity: 4,
               },
               repulse: {
-                distance: 200,
-                duration: 1,
+                distance: 400,
+                duration: 0.4,
               },
             },
           },
@@ -48,18 +43,19 @@ function App() {
             },
             links: {
               color: "#ffffff",
-              distance: 150,
+              distance: 140,
               enable: true,
               opacity: 0.3,
               width: 1,
             },
             collisions: {
-              enable: true,
+              enable: false,
             },
             move: {
               direction: "none",
               enable: true,
-              outMode: "bounce",
+              outMode: "out",
+              bounce: false,
               random: false,
               speed: 1,
               straight: false,
@@ -69,7 +65,7 @@ function App() {
                 enable: true,
                 value_area: 800,
               },
-              value: 80,
+              value: 40,
             },
             opacity: {
               value: 0.8,
