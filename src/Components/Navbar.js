@@ -42,17 +42,28 @@ export default function Navbar() {
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
-          <Dropdown.Item href="/abdullahbasal" style={{ textAlign: "center" }}>
-            Anasayfa
+          <Dropdown.Item style={{ textAlign: "center" }}>
+            <Link to="/abdullahbasal">
+              <p style={{ color: "black" }}>Anasayfa</p>
+            </Link>
           </Dropdown.Item>
-          <Dropdown.Item href="/About" style={{ textAlign: "center" }}>
-            Hakkımda
+
+          <Dropdown.Item style={{ textAlign: "center" }}>
+            <Link to="/About">
+              <p style={{ color: "black" }}>Hakkımda</p>
+            </Link>
           </Dropdown.Item>
-          <Dropdown.Item href="/Resume" style={{ textAlign: "center" }}>
-            Öz Geçmiş
+
+          <Dropdown.Item style={{ textAlign: "center" }}>
+            <Link to="/Resume">
+              <p style={{ color: "black" }}>Öz Geçmiş</p>
+            </Link>
           </Dropdown.Item>
-          <Dropdown.Item href="/Contact" style={{ textAlign: "center" }}>
-            İletişim
+
+          <Dropdown.Item style={{ textAlign: "center" }}>
+            <Link to="/Contact">
+              <p style={{ color: "black" }}>İletişim</p>
+            </Link>
           </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
